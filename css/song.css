@@ -1,3 +1,152 @@
-*{margin:0;padding:0; box-sizing:border-box}
-a{text-decoration: none}
-ul,ol{list-style: none}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+@keyframes circling {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  background: url("https://p3.music.126.net/BItr8CpEEnPgOJF9WnW5Zg==/109951163532998104.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+
+.disc-container {
+  position: relative;
+}
+
+.disc-container .needle {
+  position: absolute;
+  left: 45vw;
+  width: 24vw;
+}
+
+.disc-container .disc {
+  margin-top: 18vw;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disc-container .disc svg {
+  position: absolute;
+  fill: aliceblue;
+  z-index: 9999;
+}
+
+.disc-container .disc svg.icon {
+  width: 15vw;
+  height: 15vw;
+}
+
+.disc-container .disc svg.icon.icon-pause,
+.disc-container.playing .disc svg.icon.icon-play {
+  transition: all 0.3s;
+  display: none;
+}
+
+.disc-container.playing .disc svg.icon.icon-pause {
+  transition: all 0.3s;
+  display: block;
+}
+
+.disc-container .disc .ring {
+  width: 72vw;
+}
+
+.disc-container .disc .light {
+  position: absolute;
+  width: 72vw;
+}
+
+.disc-container .disc .cover {
+  position: absolute;
+  width: 45vw;
+  border-radius: 50%;
+}
+
+.disc-container.playing .disc .cover,
+.disc-container.playing .disc .light {
+  animation: circling infinite 20s linear;
+}
+
+.lyrics-area {
+  flex-grow: 1;
+  line-height: 2;
+  text-align: center;
+}
+
+.lyrics-area h1 {
+  margin: 10px 0;
+  color: white;
+  font-size: 18px;
+}
+
+.lyrics-area .inner-lyrics {
+  border: 1px solid white;
+  height: 72px;
+  overflow: auto;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.lyrics-area .lines {
+  border: 1px solid red;
+  transform: translateY(-237px);
+}
+
+.lyrics-area p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.page .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page .links a {
+  padding: 0.5rem;
+  width: 38.5vw;
+  margin: 1rem;
+  background: transparent;
+  color: #cc3331;
+  border-radius: 5px;
+  border: 1px solid #cc3331;
+  font-size: 14px;
+}
+
+.page .links a.main {
+  background: #cc3331;
+  color: white;
+}
