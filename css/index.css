@@ -1,0 +1,65 @@
+.el-tabs__nav{
+    display: flex;
+    float: none;
+}
+.el-tabs__item{
+    flex: 1;
+    text-align: center;
+}
+.el-tabs__item.is-active{
+    color: #cd3533;
+}
+.el-tabs__active-bar{
+    background: #cd3533;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.recommend-list {
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 33.3%;
+}
+
+.top-bar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8vw;
+    position: relative;
+    background: #cd3533;
+
+}
+
+.top-bar svg {
+    /* position: absolute;
+    top: 4vw;
+    left: 2vw;
+    fill: white; */
+    width: 8vw;
+    height: 8vw;
+}
+
+.top-bar h1 {
+    /* position: absolute;
+    top: 6vw;
+    left: 12vw; */
+    justify-content: start;  
+    /* margin-left:-166px; */
+    color: white;
+}
+
+.top-bar a {
+    /* position: absolute;
+    top: 6vw;
+    right: 12vw; */
+    border:1px solid white;
+    border-radius: 1vw;
+    padding:1.5vw 3.5vw;
+    color: white;
+}

@@ -2,6 +2,7 @@ let app = new Vue({
     el: '#app',
     data: function () {
         return {
+            activeName: 'first',
             navItems: [
                 { id:0,value: "推荐音乐", link: "#" },
                 { id:1,value: "热歌榜", link: "#" },
@@ -1841,5 +1842,10 @@ let app = new Vue({
             
         }
     },
+    methods:{
+        handleClick(tab, event) {
+            console.log(tab, event);
+          }
+        }
 
 })
