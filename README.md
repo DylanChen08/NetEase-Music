@@ -2,6 +2,8 @@
 
 >技术设计:Vue+jQuery+Element Ui ，部分功能有待完善~
 
+![点我预览]( http://treychen.top/)
+
 下面是效果截图:
 
 ### 主界面
