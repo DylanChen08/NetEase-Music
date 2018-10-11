@@ -32,7 +32,6 @@ ol {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   background: url("https://p3.music.126.net/BItr8CpEEnPgOJF9WnW5Zg==/109951163532998104.jpg")
     no-repeat center;
   background-size: cover;
@@ -50,7 +49,6 @@ ol {
 
 .disc-container .disc {
   margin-top: 18vw;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,14 +109,12 @@ ol {
 }
 
 .lyrics-area .inner-lyrics {
-  border: 1px solid white;
   height: 72px;
   overflow: auto;
   color: hsla(0, 0%, 100%, 0.6);
 }
 
 .lyrics-area .lines {
-  border: 1px solid red;
   transform: translateY(-237px);
 }
 

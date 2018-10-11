@@ -1,4 +1,18 @@
 $(function () {
+    // 根据主页传过来的id判断歌曲
+    // let id = parseInt(location.search.match(/\bid=([^&]*)/)[1],10)
+
+	// $.get('./songs.json').then(function(response){
+	// 	let songs = response
+	// 	let song = songs.filter(s=>s.id === id)[0]
+	// 	let {url, name, lyric} = song
+
+	// 	initPlayer.call(undefined, url)
+	// 	initText(name, lyric)
+	// })
+
+
+
     $.get('./lyrics.json').then((res) => {
         let obj = res.lrc
         let { lyric } = obj

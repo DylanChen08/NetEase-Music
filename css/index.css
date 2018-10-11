@@ -1,3 +1,6 @@
+.el-tabs__header {
+  margin: 0;
+}
 .el-tabs__nav {
   display: flex;
   float: none;
@@ -12,6 +15,7 @@
 .el-tabs__active-bar {
   background: #cd3533;
 }
+
 .icon {
   width: 1em;
   height: 1em;
@@ -21,21 +25,21 @@
 }
 
 .top-bar svg {
-    width: 8vw;
-    height: 8vw;
-  }
-  
-  .top-bar h1 {
-    justify-content: start;
-    color: white;
-  }
-  
-  .top-bar a {
-    border: 1px solid white;
-    border-radius: 1vw;
-    padding: 1.5vw 3.5vw;
-    color: white;
-  }
+  width: 8vw;
+  height: 8vw;
+}
+
+.top-bar h1 {
+  justify-content: start;
+  color: white;
+}
+
+.top-bar a {
+  border: 1px solid white;
+  border-radius: 1vw;
+  padding: 1.5vw 3.5vw;
+  color: white;
+}
 
 .recommend-title {
   padding-left: 3.73vw;
@@ -143,13 +147,12 @@
   background: #cd3533;
 }
 
-
 footer {
   background: url(//s3.music.126.net/m/s/img/recommand_bg_2x.png?d045fafc60e017b653f8065a87496922)
     no-repeat;
   background-size: cover;
   margin-top: 10vw;
-  padding:6vw 0;
+  padding: 6vw 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -175,4 +178,73 @@ footer p {
   line-height: 16px;
   -webkit-transform: scale(0.75);
   transform: scale(0.75);
+}
+
+/* hotsong(热歌榜) */
+.hot-song .hot-song-fix-top {
+  position: relative;
+  background: url(http://s3.music.126.net/m/s/img/hot_music_bg_2x.jpg) no-repeat;
+  background-size: cover;
+  height: 38.93vw;
+}
+.hot-song .hot-song-logo {
+  width: 142px;
+  height: 67px;
+  position: absolute;
+  top: 6.67vw;
+  left: 6vw;
+  z-index: 1000;
+  background: url(//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28…)
+    no-repeat;
+  background-size: 166px 97px;
+  background-position: -24px -30px;
+}
+.search-input {
+  padding: 4vw 6vw;
+}
+.search-input-cover {
+  display: flex;
+  justify-content: center;
+  padding: 0 8vw;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background: #e8e9ea;
+  border-radius: 30px;
+}
+.search-input-cover svg {
+  position: absolute;
+  left: 9px;
+  top: 8px;
+}
+.search-input-cover input {
+  height: 8vw;
+  width: 100%;
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+}
+.hot-search-list ul h3{
+  color: #888;
+  font-size: 12px;
+}
+.hot-search-list ul{
+  margin-top:15px;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.hot-search-list ul li{
+  border:1px solid #333 ;
+  border-radius: 30px;
+  display: inline-block;
+  height: 32px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 0 14px;
+  font-size: 14px;
+  line-height: 32px;
+  color: #333;
 }
