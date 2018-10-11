@@ -224,6 +224,9 @@ footer p {
   border-radius: 0;
   border: 0;
 }
+.hot-search-list{
+  padding:2vw;
+}
 .hot-search-list ul h3{
   color: #888;
   font-size: 12px;
