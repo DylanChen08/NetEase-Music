@@ -2,7 +2,7 @@
 
 >技术涉及:Vue+jQuery+Element Ui ，部分功能有待完善~
 
-预览传送门 : [点我预览]( http://treychen.top/)
+预览传送门 : [点我预览]( https://easecy.github.io/NetEase-Music/)
 
 下面是效果截图:
 
