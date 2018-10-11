@@ -1,6 +1,6 @@
 # Vue+jQuery的轻仿网易云
 
->技术设计:Vue+jQuery+Element Ui ，部分功能有待完善~
+>技术涉及:Vue+jQuery+Element Ui ，部分功能有待完善~
 
 预览传送门 : [点我预览]( http://treychen.top/)
 
